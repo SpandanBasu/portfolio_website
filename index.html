@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spandan's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://kit.fontawesome.com/bf4d657e31.js" crossorigin="anonymous"></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+  <div class="scroll-btn">
+    <div class="text-gradient">
+      <i class="fa-solid fa-circle-arrow-up"></i>
+    </div>
+    
+  </div>
+  <div id="header">
+    <div class="scroll">
+      <nav>
+        
+        <h2><a href="#"><span class="text-gradient">S</span>pandan</a></h2>
+        <ul id="sideMenu">
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- ------------Introduction------------ -->
+
+    <div class="hero intro-full" id="introduction">
+
+
+      <div class="container scroll" id="intro">
+        <div class="avatar">
+          <img src="images/avatar.png">
+        </div>
+        <div class="content">
+          <div class="name">Spandan</div>
+          <div class="job">
+            I'm a
+            <span class="text-gradient sec-text"></span>
+          </div>
+          <div class="des">
+            I am a FullStack Developer with 2+ Years of Professional experience
+            <br>
+            <a class="text-gradient" href="#about">See my Qalifications</a>
+            <a href="images/Spandan_Latest_Resume.pdf" download id="cvdownloadLink" style="display: none;"></a>
+            <button id="downloadCVBtn">Download CV</button>
+          </div>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast_download_cv" class="toast">Download is about to start...</div>
+
+
+    <!-- ------------About------------ -->
+
+    <div class="hero scroll tab-section" id="about" >
+      <header>
+        <nav>
+          <a class="active-tab" data-tab ="experience">Experience</a>
+          <a data-tab="skill">Skill</a>
+          <a data-tab="education">Education</a>
+        </nav>
+      </header>
+
+      <!-- ---------Experience------------ -->
+
+      <div class="tab active" id="experience">
+        <div class="container">
+          <div class="list">
+            <div class="item">
+              <div class="time">2019</div>
+              <i class="fa-solid fa-school-flag"></i>
+              <div class="content">
+                <div class="job">I Go To College</div>
+                <div class="company">Techno Main Saltlake</div>
+                <div class="des">
+                  <!-- 15 -->
+                  Learned fundamentals of Computer Science and Software Development Principles. Concepts such as <span> DSA, OOPs, OS, ML, and Computer Networks</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="time">2022</div>
+              <i class="fa-solid fa-briefcase"></i>
+              <div class="content">
+                <div class="job">R&D Software Developer Intern</div>
+                <div class="company">Hyland Software</div>
+                <div class="des">
+                  <!-- 15 -->
+                  Created Reltime Health Monitoring Software on BIC Solution Configuration Manager (SCM).<span> Technologies: JAVA, REST API, Grafana, New Relic, PowerShell
+                  Scripting, SQL, Python</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="time">2023</div>
+              <i class="fa-solid fa-briefcase"></i>
+              <div class="content">
+                <div class="job">QA, Test Automation, Internship</div>
+                <div class="company">ARC Document Solutions</div>
+                <div class="des">
+                  <!-- 15 -->
+                  Developed and automated test cases for multiple products using Java and Selenium. <span>Technologies: Java, Selenium, Agile, Jira</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="time">2023</div>
+              <i class="fa-solid fa-briefcase"></i>
+              <div class="content">
+                <div class="job">R&D FullStack Software Developer</div>
+                <div class="company">Hyland Software</div>
+                <div class="des">
+                  <!-- 15 -->
+                  Developed new features and resolved legacy code issues for the Brainware for Tran
+                  scripts team <span>Technologies: Angular, SpringBoot, Hibernate, SQL, BootStrap, TypeScript, JavaScript, HTML, CSS, WinWrap,
+                    Git, MongoDB , JSON, XML</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- -------------Skills--------------- -->
+
+
+      <div class="tab" id="skill" >
+        <div class="main container">
+          <div class="list">
+
+            <div id="first_skill" class="item">
+              <i class="fa-brands fa-java"></i>
+              <div class="name">JAVA</div>
+              <div class="des">
+                Concepts Of Object Oriented Programming and More
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="fa-solid fa-leaf"></i>
+              <div class="name">Spring MVC</div>
+              <div class="des">
+                <!-- 7 -->
+                Designing Robust and Secure Backend Applications Using Spring Boot
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="fa-brands fa-js"></i>
+              <div class="name">Javascript</div>
+              <div class="des">
+                <!-- 7 -->
+                Experience with JS and also TypeScript
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="fa-brands fa-angular"></i>
+              <div class="name">Angular</div>
+              <div class="des">
+                <!-- 7 -->
+                Design Flexible and Reactive Frontend Application
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="fa-solid fa-database"></i>
+              <div class="name">SQL</div>
+              <div class="des">
+                <!-- 7 -->
+                Experience with Relataional Database such as SQLServer, ORACLE, MySQL
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/mongo_logo.png" alt="Logo" class="custom-logo fa-brands">
+              <div class="name">Mongo DB</div>
+              <div class="des">
+                <!-- 7 -->
+                Experience with NonRelational Database like MongoDB, Firebase, etc.
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="fa-brands fa-android"></i>
+              <div class="name">Android</div>
+              <div class="des">
+                <!-- 7 -->
+                Experience in Android Mobile Applications Development
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="fa-brands fa-python"></i>
+              <div class="name">Python</div>
+              <div class="des">
+                <!-- 7 -->
+                Used Machine Learning Models and Other Libraries using Python
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="fa-solid fa-server"></i>
+              <div class="name">REST API</div>
+              <div class="des">
+                <!-- 7 -->
+                Experience with various REST APIs
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- -------------------------Education--------------------------- -->
+
+
+      <div class="tab" id="education">
+          <div class="main">
+            <div class="container-edu">
+                <ul>
+                    <li>
+                        <h3 class="heading">B.Tech Conputer Science</h3>
+                        <p>Techno Main Saltlake, Kolkata<br> <span class="marks">GPA: 9.3</span> </p>
+                        
+                        <a href="images/Spandan_Latest_Resume.pdf" download>Read More ></a>
+                        <span id="first_education" class="date">July 2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Higher Secondary Education (Computer Science)</h3>
+                        <p>Sodepur High School <br> <span class="marks">PER: 82.6%</span></p>
+                        <a href="images/Spandan_Latest_Resume.pdf" download>Read More ></a>
+                        <span class="date">February 2019</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">Secondary Education</h3>
+                        <p>Sodepur High School <br> <span class="marks">PER: 91%</span></p>
+                        <a href="images/Spandan_Latest_Resume.pdf" download>Read More ></a>
+                        <span class="date">February 2017</span>
+                        <span class="circle"></span>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- ------------Projects------------ -->
+
+    <div class="hero scroll" id="projects">
+      
+      <div class="tab-project" id="project" >
+        
+        <h1>My Projects</h1>
+        <div class="container">
+          
+            <div class="list">
+
+              <a href="https://github.com/SpandanBasu/Green-Heroes">
+                <div class="item">
+                    <img src="images/green_heroes.png">
+                    <div class="index">#1</div>
+                    <div class="name">Green Heroes</div>
+                    <div class="des">
+                        <!-- 20 -->
+                        An initiative to motivate youth to plant trees through modern technology and social media
+                    </div>
+                    <div class="author">
+                        <div class="job">FullStack Android</div>
+                        <div class="time">
+                            2022/10/10
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+              </a>
+              
+              <a href="https://github.com/SpandanBasu/Food-to-Feed">
+                <div class="item">
+                    <img src="images/food_to_feed.jpg">
+                    <div class="index">#2</div>
+                    <div class="name">Food to Feed</div>
+                    <div class="des">
+                        <!-- 20 -->
+                        Topic: Zero Hunger. This is an Android Application made for a Hackathon challenging to fight world hunger
+                    </div>
+                    <div class="author">
+                        <div class="job">FullStack Android</div>
+                        <div class="time">
+                            2022/08/12
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+              </a>
+
+              <a href="https://github.com/SpandanBasu/hotel-management-system">
+                <div class="item">
+                    <img src="images/hotel_management.jpg">
+                    <div class="index">#3</div>
+                    <div class="name">Hotel Management Application</div>
+                    <div class="des">
+                        <!-- 20 -->
+                        Hotel Management Application Using Angular (FrontEnd) and Mockoon for Mock Backend APIs.
+                    </div>
+                    <div class="author">
+                        <div class="job">Frontend Web</div>
+                        <div class="time">
+                            2023/09/15
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+              </a>
+
+              <a href="https://github.com/SpandanBasu/Opinion-mining-of-Adapted-movies-based-on-Social-Network-Analysis">
+                <div class="item">
+                    <img src="images/AI_analysis_OMAMBSNA.png">
+                    <div class="index">#4</div>
+                    <div class="name">Opinion-mining-of-Adapted-movies-based-on-Social-Network-Analysis</div>
+                    <div class="des">
+                        <!-- 20 -->
+                        Social Network Analysis and Opinion Mining on movies originated from same backstory. To find similarities and deviations of the relation in the Story vs Movie
+                    </div>
+                    <div class="author">
+                        <div class="job">BackEnd AI Model Neural Networks</div>
+                        <div class="time">
+                            2023/01/07
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+              </a>
+
+
+
+              <a href="https://github.com/SpandanBasu/Watch-2-Gather">
+                <div class="item">
+                    <img src="images/watchtogather.jpeg">
+                    <div class="index">#5</div>
+                    <div class="name">Watch-2-Gather</div>
+                    <div class="des">
+                        <!-- 20 -->
+                        An Application to watch movies together with your long distance friends and family. Watch together or Watch to Gather close!
+                    </div>
+                    <div class="author">
+                        <div class="job">FullStack Android</div>
+                        <div class="time">
+                            2022/12/12 
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+              </a>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- ------------Contacts------------ -->
+
+    <div class="hero scroll" id="contacts">
+      
+      <div class="container-contact">
+        
+        <main class="row">
+          
+          <!--  *******   Left Section (Column) Starts   *******  -->
+    
+          <section class="col left">
+            
+            <!--  *******   Title Starts   *******  -->
+    
+            <div class="contactTitle">
+              <h2>Get In Touch</h2>
+              <p>You can fill out the form or directly call me. I will try to get back ASAP</p>
+            </div>
+    
+            <!--  *******   Title Ends   *******  -->
+    
+            <!--  *******   Contact Info Starts   *******  -->
+    
+            <div class="contactInfo">
+              
+              <div class="iconGroup">
+                <div class="icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="details">
+                  <span>Phone</span>
+                  <span>+91 8583092487</span>
+                </div>
+              </div>
+    
+              <div class="iconGroup">
+                <div class="icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="details">
+                  <span>Email</span>
+                  <span>sbmailid1@gmail.com</span>
+                </div>
+              </div>
+    
+              <div class="iconGroup">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="details">
+                  <span>Location</span>
+                  <span>Kolkata, India</span>
+                </div>
+              </div>
+    
+            </div>
+    
+            <!--  *******   Contact Info Ends   *******  -->
+    
+            <!--  *******   Social Media Starts   *******  -->
+    
+            <div class="socialMedia">
+              <a href="https://www.facebook.com/spandan.basu.71"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://x.com/sbmailid1"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/spandan_basu/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/spandan-basu/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+    
+            <!--  *******   Social Media Ends   *******  -->
+    
+          </section>
+    
+          <!--  *******   Left Section (Column) Ends   *******  -->
+    
+          <!--  *******   Right Section (Column) Starts   *******  -->
+    
+          <section class="col right">
+            
+            <!--  *******   Form Starts   *******  -->
+    
+            <form name="submit-to-google-sheet" class="messageForm">
+              
+              <div class="inputGroup halfWidth">
+                <input type="text" name="Name" required="required" placeholder=" ">
+                <label>Your Name</label>
+              </div>
+    
+              <div class="inputGroup halfWidth">
+                <input type="email" name="Email" required="required" placeholder=" ">
+                <label>Email</label>
+              </div>
+    
+              <div class="inputGroup fullWidth">
+                <input type="text" name="Subject" required="required" placeholder=" ">
+                <label>Subject</label>
+              </div>
+    
+              <div class="inputGroup fullWidth">
+                <textarea required="required" name="Message" placeholder=" "></textarea>
+                <label>Say Something</label>
+              </div>
+    
+              <div class="inputGroup fullWidth">
+                <button id="contact-submit" type="submit">Send Message</button>
+              </div>
+    
+            </form>
+            
+    
+            <!--  *******   Form Ends   *******  -->
+          </section>
+    
+          <!--  *******   Right Section (Column) Ends   *******  -->
+
+          <!-- Toast Notification -->
+          <div id="toast_wait" class="toast">Please wait...</div>
+          <div id="toast_contact_success" class="toast">Message sent successfully!</div>
+          <div id="toast_contact_failure" class="toast">Message could not be sent!</div>
+    
+        </main>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
