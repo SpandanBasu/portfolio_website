@@ -59,12 +59,13 @@ h1{
   font-size: 30px;
   letter-spacing: 5px;
   cursor: pointer;
+  color: black;
 }
 
 #header nav h2 a:visited, 
 #header nav h2 a:active, 
 #header nav h2 a:focus {
-    color: inherit; /* Keep the same color */
+    color: black; /* Keep the same color */
     outline: none; /* Remove focus outline if any */
 }
 
